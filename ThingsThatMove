@@ -1,0 +1,14 @@
+public class ThingsThatMove {
+    public static void main(String [] args) {
+        Movement [] list = new Movement[3];
+        list[0] = new Airplane("Boeing 747",2016);
+        list[1] = new Bird("Eagle");
+        list[2] = new Bird("Hummingbird");
+        for(Movement thingsThatMove: list){
+            System.out.println(thingsThatMove.toString());
+            thingsThatMove.fly();
+            thingsThatMove.walk();
+            thingsThatMove.jump();
+        }
+    }
+}
